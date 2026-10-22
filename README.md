@@ -22,6 +22,7 @@ The decision threshold used by the demo app is `0.6774`.
 | `notebooks/SmartHomeBench_submission.ipynb` | Version submitted with the report |
 | `notebooks/SmartHomeBench_first.ipynb` | Early exploration notebook |
 | `app/app.py` | Streamlit demo: upload an MP4 and get an anomaly score |
+| `app/smarthome_phase2_augmented.pth` | Trained Bi-LSTM weights (phase 2, augmented) |
 | `demo_videos/` | Short labeled clips (`normal_*`, `abnormal_*`) for trying the demo |
 | `results/test_results_arrays.npz` | Test-set `scores` and `labels` (721 clips) used for the ROC / confusion-matrix plots |
 | `report/report.pdf` | Full project report |
@@ -34,7 +35,7 @@ cd app
 streamlit run app.py
 ```
 
-The app expects the trained weights `smarthome_phase2_augmented.pth` (~25 MB) in the `app/` folder. The weights are not committed yet. Train them with the notebook, or check the Releases page.
+The trained weights (`app/smarthome_phase2_augmented.pth`, ~25 MB) are included, so the demo runs out of the box. Run it from the `app/` folder so it can find them.
 
 ## Dataset
 
